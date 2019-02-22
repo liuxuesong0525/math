@@ -483,23 +483,33 @@
 
 
 #2.	读入文件‘hello.txt’.统计文件中每个单词的数量并且进行输出
-f=open("E://hello.txt","r")
-a=f.readlines()
-print("读到的文件：",a)
-a=str(a)
-s=a.replace(',',' ').replace('.',' ')
-print("替换后的文件:",s)
-q=s.split(' ')
-print("切割后的文件:",q)
-count=0
-d={}
-for i in q:
-    d[i]=q.count(i)
-print(d)
+# f=open("E://hello.txt","r")
+# a=f.readlines()
+# print("读到的文件：",a)
+# a=str(a)
+# s=a.replace(',',' ').replace('.',' ')
+# print("替换后的文件:",s)
+# q=s.split(' ')
+# print("切割后的文件:",q)
+# count=0
+# d={}
+# for i in q:
+#     d[i]=q.count(i)
+# print(d)
 
 #1.	生成100个范围在0-20的整数，并且能够打印输出
-import random
-list=[]
-for i in range(100):
-    list.append(random.randint(0,20))
-print(list)
+# import random
+# list=[]
+# for i in range(100):
+#     list.append(random.randint(0,20))
+# print(list)
+
+#四个数字：1、2、3、4，能组成多少个互不相同且无重复数字的三位数？各是多少
+count=0
+for i in range(1,5):
+    for j in range(1,5):
+        for k in range(1,5):
+            if i!=j and i!=k and j!=k:
+                count+=1
+                print("无重复数字有：",i,j,k)
+print("共有无重复数字%d个"%count)
