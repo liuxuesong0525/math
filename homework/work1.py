@@ -1,0 +1,9 @@
+#文件的读和写
+f=open("D://hello.txt","r")
+a=f.readlines()
+print(a)
+f.close()
+b=open("D://hello2.txt","w")
+c=b.writelines(a)
+b.close()
+print("成功啦")
