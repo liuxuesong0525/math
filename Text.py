@@ -537,5 +537,4 @@ def a (str):
             return 1
         else:
             return 0
-
-print(a('aberba'))
+print(a('aberreba'))
