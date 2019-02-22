@@ -463,7 +463,43 @@
 #     num=int(input())
 
 #输入一个数a，求1+2!+3!+...+a!的和
+# Sum=0
+# factorial=1
+# num = int(input('请输入一个数字：'))
+# for i in range(1,num+1):
+#     factorial = factorial*i
+#     Sum +=factorial
+# print('阶乘之和：',Sum)
 
 
+# d1=dict({"id":1948,"name":"Washer","size":3})
+# print(d1)
+# d4={"id":1948,"name":"Washer","size":3}
+# print(d4)
+# d2=dict(id=1948,name="Washer",size=3)
+# print(d2)
+# d3=dict([("id",1948),("name","Washer"),("size",3)])
+# print(d3)
 
 
+#2.	读入文件‘hello.txt’.统计文件中每个单词的数量并且进行输出
+f=open("E://hello.txt","r")
+a=f.readlines()
+print("读到的文件：",a)
+a=str(a)
+s=a.replace(',',' ').replace('.',' ')
+print("替换后的文件:",s)
+q=s.split(' ')
+print("切割后的文件:",q)
+count=0
+d={}
+for i in q:
+    d[i]=q.count(i)
+print(d)
+
+#1.	生成100个范围在0-20的整数，并且能够打印输出
+# import random
+# list=[]
+# for i in range(100):
+#     list.append(random.randint(0,20))
+# print(list)
