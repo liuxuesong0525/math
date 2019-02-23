@@ -1,0 +1,9 @@
+#.将一个列表的数据复制到另一个列表中，并反向排序输出
+f=open("D://hello.txt","r")
+a=f.readlines()
+f.close()
+print(f)
+e=open("D://hello2.txt","w")
+b=e.writelines()
+e.close()
+print("写入成功")
