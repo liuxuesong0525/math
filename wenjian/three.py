@@ -1,0 +1,7 @@
+f=open('mo.png','rb+')
+a=f.read()
+f.close()
+b=open('mo_fuben.png','wb+')
+b.write(a)
+b.close()
+print("复制成功")

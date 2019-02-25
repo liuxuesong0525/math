@@ -1,0 +1,6 @@
+f=open('mo.png','rb+')
+a=f.read()
+f.close()
+e=open('mo_fuben.png',"wb+")
+e.write(a)
+e.close()
